@@ -28,7 +28,7 @@ pipeline {
 
         stage('Plan') {
             steps {
-                sh 'pwd;cd terraform/aws-instance-first-script ; terraform init -input=false'
+                sh 'terraform init -input=false'
                 sh 'pwd;cd terraform/aws-instance-first-script ; terraform workspace new ${environment}'
                 sh 'pwd;cd terraform/aws-instance-first-script ; terraform workspace select ${environment}'
                 sh "pwd;cd terraform/aws-instance-first-script ;terraform plan -input=false -out tfplan "
