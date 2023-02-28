@@ -1,2 +1,2 @@
-# AWS-EC2-JENKINS-TF
-Automate AWS EC2 Instance setup using Terraform and Jenkins
+# Welcome to Tekno Pathshala
+# This Repo contains Terraform code to create Ec2 instance in AWS cloud
