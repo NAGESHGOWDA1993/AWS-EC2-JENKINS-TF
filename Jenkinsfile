@@ -15,7 +15,7 @@ pipeline {
                  script{
                         dir("terraform")
                         {
-                            git "https://github.com/NAGESHGOWDA1993/AWS-EC2-JENKINS-TF.git"
+                            git branch: 'main', credentialsId: 'c4c6589a-4a60-4169-9d8f-0c01dce71188', url: 'https://github.com/NAGESHGOWDA1993/AWS-EC2-JENKINS-TF.git'
                         }
                     }
                 }
