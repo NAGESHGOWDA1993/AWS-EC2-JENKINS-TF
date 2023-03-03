@@ -4,6 +4,10 @@ variable "aws_region" {
   default     = "eu-west-1"
 }
 
+variable "key_name" {
+  description = " SSH keys to connect to ec2 instance"
+  default     =  "Ec2keypair"
+}
 
 variable "instance_type" {
   description = "instance type for ec2"
@@ -17,7 +21,7 @@ variable "security_group" {
 
 variable "tag_name" {
   description = "Tag Name of for Ec2 instance"
-  default     = "my-terraform-instace"
+  default     = "TF-Instance"
 }
 
 variable "ami_id" {

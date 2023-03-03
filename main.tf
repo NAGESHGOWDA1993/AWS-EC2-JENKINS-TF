@@ -37,6 +37,7 @@ resource "aws_security_group" "my_security_group" {
 # Create AWS ec2 instance
 resource "aws_instance" "TF-Instance" {
   ami           = var.ami_id
+  key_name = var.key_name
   instance_type = var.instance_type
   security_groups= [var.security_group]
   tags= {
