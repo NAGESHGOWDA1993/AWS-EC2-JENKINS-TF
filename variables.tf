@@ -1,4 +1,3 @@
-
 variable "aws_region" {
   description = "The AWS region to create things in."
   default     = "eu-west-1"
@@ -21,10 +20,10 @@ variable "security_group" {
 
 variable "tag_name" {
   description = "Tag Name of for Ec2 instance"
-  default     = "TF-Instance"
+  default     = "TestInstance"
 }
 
 variable "ami_id" {
-  description = "AMI for Amazon Ami2 Ec2 instance"
+  description = "AMI for Ubuntu Ec2 instance"
   default     = "ami-065793e81b1869261"
 }
